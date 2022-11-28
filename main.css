@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family:"udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbo";
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    /* justify-content: center;
+    align-items: center;
+    display: flex; */
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+   
+}
+header{
+    height:80px;
+    width:100%;
+    display:flex;
+    align-items: center;
+   
+    top:0;
+    padding: 0px 12px 0 12px;
+    margin: 12px 0px 12px 0px;
+    
+    z-index: 1000;
+    /* font:14px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.4rem;
+   
+    position: relative;
+    z-index: 1010; */
+}
+header .logo svg{
+    width: 80px;
+    height:100%;
+    vertical-align: middle;
+    width: 91px;
+    /* aspect-ratio: auto 91 / 34; */
+    
+}
+header .search{
+    display: flex;
+    flex: 1;
+    border-radius: 150px;
+    border: 2px solid;
+    max-width: 1000px;
+    margin: 20px;
+}
+ 
+header .search span{
+    width:20px;
+    align-items: center;
+    padding: .6rem rem .8rem 1rem;
+    font-size: 1.2rem;
+
+}
+header .search input{
+    width:89% ;
+    outline: none;
+    border: none;
+
+}
+header.categories span{
+    margin:20px;
+
+}
+nav{
+    display:flex;
+    justify-content: center;
+    /* align-items:space-evenly; */
+    
+    padding:0px 50px 0px 50px;
+
+}
+nav .options{
+    display: flex;
+    flex-direction: column;
+   
+    cursor: pointer;
+}
+.options span{
+    font-size: 17px;
+    font-weight: 100;
+   
+}
+div.header_links{
+    display: flex;
+    padding:50px;
+    margin:20px;
+
+}
+.login{
+    border:2px solid black;
+    margin:20px;
+    background:white;
+    padding: 3px;
+}
+.sign_up{
+    background:black;
+    color:white;
+    font-weight:100;
+    border:2px solid black;
+    margin:20px;
+    padding: 3px;
+
+}
+div.header_links .language{
+    margin:20px;
+}
+
+/* background_image */
+ .sale{
+    background-color: white;
+    border: 3px solid black;
+   text-align: center;
+   position: absolute;
+   left: 20px;
+   top: 200px;
+   width: 500px;
+   height: 150px;
+}
+div.background_image{
+    background-image: url('./images/background image.jpg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* width:1000px; */
+    width:100%;
+    height:300px;
+    
+}
+
+div.broad_selection h2{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.35;
+
+}
+  
+div.broad_selection p{
+    margin: 1.6rem 0 0;
+    max-width: 80rem;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.9rem;
+}
+div.corousel-scroll{
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    grid-gap: 1.6rem
+}
+div.expand{
+    border: 1px solid #d1d7dc;
+    padding: 3.2rem;
+    margin-bottom: 0px 0px 32px;
+    max-width:1650px;
+}
+div.expand h2{
+    margin-bottom: 0.8rem;
+    max-width: 80rem;
+}
+
+div.expand p{
+    margin-bottom: 1.6rem;
+    max-width: 80rem;
+}
+ 
+div.expand button{
+    color: #1c1d1f;
+    background-color: transparent;
+    border: 1px solid #1c1d1f;
+    padding: 15px;
+}
+.python_courses{
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    grid-gap: 1.6rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;    
+
+}
+.python_courses .python_course{
+    width:300px;
+}
+div.price{
+    display:flex;
+    gap: 10px;
+
+}
+div.badge{
+    background-color: #eceb98;
+    color: #3d3c0a;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 1.2rem;
+    width: 100px;
+}
+div.reasons{
+    display: flex;
+    /* flex-direction: column; */
+} 
+
+div.why_learn{
+    background: #f7f9fa;
+    border: 0;
+    margin-top: 4.8rem;
+    padding: 3.2rem 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+div.reason{
+    display: flex;
+    align-items: center; 
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.6rem;
+    color: #1c1d1f;
+    margin: 0;
+
+}
+/* div.reason h2{
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.35;
+    letter-spacing: -.02rem;
+    max-width: 60rem;
+} */
+div.reason .content{
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 1.6rem;
+    display: block;
+
+}
+ div.media_1{
+  border: 2px solid black;
+  background: #d1d7dc;
+  padding: 3px;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  
+} 
+div.viewing_display {
+    margin-bottom: 6.4rem;
+    margin-top: 4.8rem;
+}
+
+div.category_0{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.6rem -3.2rem 0;
+    gap: 60px;
+    align-items: center;
+}
+div.category_1 div.media_2{
+    background: #f7f9fa;
+    display: block;
+    object-fit: contain;
+    transition: transform 100ms cubic-bezier(.2,0,1,.9);
+    max-width: 100%;
+    height: auto;
+    /* vertical-align: middle; */
+}
+div.category_1 div.content_0{
+    color: #1c1d1f;
+    padding: 0.8rem 0 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 1.6rem;
+}
+div.trending_topics{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;}
+   
+div.trending_topics h2{
+    margin-bottom: 2.4rem
+}
+div.topic a{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #5624d0;
+}
+div.topics div.students{
+    font-size: 1.4rem;
+    color: #6a6f73;
+    margin-top: 0.8rem;
+}
+div.explore a{
+    width: auto;
+    color: #1c1d1f;
+    background-color: transparent;
+    border: 1px solid #1c1d1f;
+    cursor: pointer;
+    display: inline-flex;
+    min-width: 8rem;
+    padding: 1.2rem;
+    justify-content: center;
+}
